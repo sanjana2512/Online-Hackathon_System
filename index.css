@@ -1,0 +1,40 @@
+/* src/index.css */
+@import "tailwindcss";
+
+/* 1. We set a modern, clean font for the entire application.
+     This will fix the "bad font" issue.
+*/
+  html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* 2. This is the fix for the black background. 
+       We are setting a light, soft gray.
+  */
+  background-color: #f4f7f6;
+
+  /* 3. This sets the default text color to be dark,
+       fixing the "invisible text" issue.
+  */
+  color: #212529;
+
+
+}
+
+/* 4. This helps make layouts more predictable.
+*/
+* {
+  box-sizing: border-box;
+}
+
+
+/* 5. We remove all other default styles from Vite (like button, h1, etc.)
+     because our React components and the 'styles.js' file
+     are now handling all the styling.
+*/
